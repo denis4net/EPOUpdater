@@ -2,10 +2,10 @@ image: jacekmarchwicki/android
 before_script:
   - export ANDROID_HOME="/opt/android-sdk"
 
-dev:
-  script:
+debug-app:
+    script:
     - ./gradlew assembleDebug
 
-artifacts:
-    paths:
-    - app/build/outputs/apk/app-debug.apk
+    artifacts:
+        paths:
+        - app/build/outputs/apk/app-debug.apk
